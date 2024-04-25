@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.all-side{
+    margin: 5vh;
+    padding:5vh;
+    border: solid 2px #000;
+    width: 10vw;
+    border-radius: 15%;
+}
+
+.left-side{
+    margin: 5vh;
+    padding:5vh;
+    border: solid 2px #000;
+    width: 10vw;
+    border-radius:0 15% 15% 0;
+}
+.right-side{
+    margin: 5vh;
+    padding:5vh;
+    border: solid 2px #000;
+    width: 10vw;
+    border-radius:15% 0 0 15%;
+}
+.diagonal-side{
+    margin: 5vh;
+    padding:5vh;
+    border: solid 2px #000;
+    width: 10vw;
+    border-radius:0 15% 0 15%;
+}
+.image-border{
+    margin: 5vh;
+    padding:5vh;
+    width: 10vw;
+    border: 15px solid transparent;
+    border-image-source:url('./image/border-image.png');  
+    border-image-slice: 100;
+    border-image-width: 10px;
+    border-image-repeat: repeat;
+}
+
+.image-border2{
+    margin: 5vh;
+    padding:5vh;
+    width: 10vw;
+    border: 15px solid transparent;
+    border-image:url('./image/border-image.png') 100 repeat;  
+
+}
+/* 
+border-image-source: Specifies the source URL of the image that will be used as the border.
+
+border-image-slice: Defines the inward offsets of the border image. It determines which part of the border image should be used to create the border.
+    In your code, it is set to 30. This means that the first 30 pixels of the image will not be used, creating an inward offset.
+
+border-image-width: Sets the width of the border image.
+    It is set to 10px in your code, meaning that the border image will be 10 pixels wide.
+
+border-image-repeat: Specifies how the border image should be repeated to cover the entire border.
+    In your case, it is set to 'repeat', meaning the image will be repeated to fill the entire border. 
+*/

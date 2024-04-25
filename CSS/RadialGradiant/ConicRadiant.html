@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conicGradiant{
+            width: 20vw;
+            height: 20vh;
+            padding: 20vh;
+            background-image: conic-gradient( red ,yellow,green,blue);
+            border-radius: 50%;
+            color: aliceblue;
+        }
+        
+        .conicGradiantdistinct{
+            width: 20vw;
+            height: 20vh;
+            padding: 20vh;
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+            color: aliceblue;
+        }
+        .repeatedConicGradiant{
+            width: 20vw;
+            height: 20vh;
+            padding: 20vh;
+            background-image: repeating-conic-gradient(darkblue 0deg 10deg, red 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="conicGradiant">
+            conical using red, yellow, green ,blue
+        </div>
+        <div class="conicGradiantdistinct">
+            distinct conical using red, yellow, green ,blue
+        </div>
+        <div class="repeatedConicGradiant">
+            distinct conical using red, yellow, green ,blue
+        </div>
+    </div>
+</body>
+</html>

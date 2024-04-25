@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .common{
+            border: 2px solid black;
+            padding: 10vh;
+            width: 20vw;
+            margin: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="common scaleX"  onmouseover="this.style.transform= 'scaleX(2)'" onmouseout="this.style.transform= 'scaleX(1)'">
+            using scaleX()
+        </div>
+        <div class="common scaleY"  onmouseover="this.style.transform= 'scaleY(2)'" onmouseout="this.style.transform= 'scaleY(1)'">
+            using scaleY()
+        </div>
+        <div class="common skewX" onmouseover="this.style.transform='skewX(20deg)'" onmouseout="this.style.transform='skewX(0deg)'">
+            using skewX()
+        </div>
+        <div class="common translate"  onmouseover="this.style.transform= 'translate(10vw,10vh)'" onmouseout="this.style.transform= 'translate(0vw,0vH)'">
+            using translate()
+        </div> 
+        <div class="common translateX"  onmouseover="this.style.transform= 'translateX(10vw)'" onmouseout="this.style.transform= 'translateX(0vw)'">
+            using translateX()
+        </div>
+        <div class="common translateY"  onmouseover="this.style.transform= 'translateY(10vh)'" onmouseout="this.style.transform= 'translateY(0vh)'">
+            using translateY()
+        </div>
+        <div class="common rotate"  onmouseover="this.style.transform= 'rotate(20deg)'" onmouseout="this.style.transform= 'rotate(0deg)'">
+            using rotate()
+        </div>
+        <!--matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())-->
+        <div class="common matrix" onmouseover="this.style.transform='matrix(1, -0.3, 0, 1, 0, 0)'" onmouseout="this.style.transform= 'matrix(1, 0, 0, 1, 0, 0)'">
+            using matrix()
+        </div>
+    </div>
+</body>
+</html>
